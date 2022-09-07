@@ -15,7 +15,7 @@ console.log("Words: " + words);
 
 
 
-let vowel_list = 'aeiou';
+let vowel_list = 'aeiouyAEIOUY';
 let vcount = 0;
 
 
@@ -35,6 +35,8 @@ console.log("vowels: " + vcount);
 
 let set1=[2 , 58 , 69 , 99 , 122 , 8 , 18]
 let set2=[7 , 99 , 18 , 78 , 8 , 58 , 4 , 3]
+
+
 
 
 
