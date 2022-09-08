@@ -1,7 +1,7 @@
 
 // task1 //
 
-let text = "we are gomycode."
+let text = prompt("write a text")
 let words = 1;
 let textArray = Array.from(text);
 
@@ -33,10 +33,26 @@ console.log("vowels: " + vcount);
 // task2 //
 
 
-let set1=[2 , 58 , 69 , 99 , 122 , 8 , 18]
-let set2=[7 , 99 , 18 , 78 , 8 , 58 , 4 , 3]
+let set1 = prompt("Enter your numbers for set1").split(",")
+let set2 = prompt("Enter your numbers for set2").split(",")
 
+function  distinct(x,y) {
+    var sum=0;
+    for (let i= 0; i< x.lengtht ; i++) {
+        if(y.includes(x[i])==false){
+            sum=sum+x[i];
+        }
+        
+    }
+    for ( let j=0; j< y.length; j++){
+        if(x.includes(y[j])==false){
+            sum=sum+x[j];
+        }
+    }
+    return sum;
+}
 
+console.log (distinct(set1, set2));
 
 
 
